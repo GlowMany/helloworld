@@ -1,0 +1,27 @@
+{
+  "name": "HelloWorld",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -b",
+    "prepack": "rm -rf dist && npm build",
+    "test": "jest",
+    "codegen": "./node_modules/.bin/subql codegen"
+  },
+  "homepage": "https://github.com/subquery/subql-starter",
+  "repository": "github:subquery/subql-starter",
+  "files": [
+    "dist",
+    "schema.graphql",
+    "project.yaml"
+  ],
+  "author": "Arkda12",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@polkadot/api": "6.4.1",
+    "@subql/types": "0.10.0",
+    "typescript": "4.4.4",
+    "@subql/cli": "0.14.0"
+  }
+}

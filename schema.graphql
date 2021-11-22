@@ -1,0 +1,4 @@
+type StarterEntity @entity {
+  id: ID!
+  blockHeight: Int!
+}
